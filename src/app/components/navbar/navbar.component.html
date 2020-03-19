@@ -1,0 +1,24 @@
+<mat-toolbar color="white">
+
+  <mat-toolbar-row>
+
+    <ng-template #home>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">menu</mat-icon>
+      <span (click)="navigateTo()" class="title-center">GDS</span>
+    </ng-template>
+
+    <mat-icon *ngIf="isJobRoute(router.url); else home" (click)="navigateTo()" class="example-icon" aria-hidden="false"
+      aria-label="Example user verified icon">
+      keyboard_arrow_left
+    </mat-icon>
+    <span *ngIf="isJobRoute(router.url)" class="example-spacer"></span>
+    <mat-icon *ngIf="isJobRoute(router.url); else search" class="example-icon" aria-hidden="false"
+      aria-label="Example user verified icon" (click)="callPhoneNumber()">phone</mat-icon>
+    <ng-template #search>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">search</mat-icon>
+    </ng-template>
+
+  </mat-toolbar-row>
+
+
+</mat-toolbar>

@@ -1,0 +1,71 @@
+<div class="job-list" [@enterAnimation]>
+  <mat-card *ngFor="let job of jobs; let i = index" class="example-card">
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <mat-card-title (click)="navigateTo(job._id)">{{ job.title }}</mat-card-title>
+      <mat-card-subtitle (click)="navigateTo(job._id)">Posted: <span
+          class="dark-text">{{ job.postedOn | amTimeAgo }}</span>
+      </mat-card-subtitle>
+
+      <div class="top-buttons">
+        <div class="chip-outer">
+          <mat-chip-list aria-label="selection">
+            <mat-chip *ngIf="job.type == 'Full Time'" color="primary" selected>{{ job.type }}</mat-chip>
+            <mat-chip *ngIf="job.type == 'Part Time'" color="none" selected>{{
+              job.type
+            }}</mat-chip>
+            <mat-chip *ngIf="job.type == 'Freelance'" color="accent" selected>{{
+              job.type
+            }}</mat-chip>
+          </mat-chip-list>
+        </div>
+        <div class="chip-outer">
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon class="grey-icon">more_horiz</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>bookmark</mat-icon>
+              <span>Opslaan</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>mail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>share</mat-icon>
+              <span>Delen</span>
+            </button>
+          </mat-menu>
+        </div>
+      </div>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <!-- <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz
+        breeds of dog from Japan. A small, agile dog that copes very well with
+        mountainous terrain, the Shiba Inu was originally bred for hunting.
+      </p>
+    </mat-card-content> -->
+    <!-- <mat-card-actions>
+    
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+    <div class="avatar" (click)="navigateTo(job._id)">
+      <img [src]="job.companyLogo" alt="" />
+      <span class="name-outer">
+        <span class="name">{{ job.companyName }}</span>
+      </span>
+      <div class="location-outer">
+        <span class="location-inner">
+          <span class="name">{{ job.location.city }},&nbsp;</span>
+        </span>
+        <span class="location-inner">
+          <span class="name">{{ job.location.state }}</span>
+        </span>
+      </div>
+    </div>
+  </mat-card>
+</div>

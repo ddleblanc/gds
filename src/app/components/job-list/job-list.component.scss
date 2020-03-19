@@ -1,0 +1,136 @@
+.job-list {
+  padding: 16px 10px 0px 10px;
+  height: calc(100vh - 112px);
+  overflow-y: scroll;
+}
+
+mat-card {
+  margin-bottom: 10px;
+}
+
+.mat-card {
+  width: calc(100vw - 52px) !important;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+  width: 66%;
+}
+
+.mat-standard-chip {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  padding: 0px 7px !important;
+  border-radius: 16px;
+  align-items: center;
+  cursor: default;
+  min-height: 20px !important;
+  height: 1px;
+}
+
+.mat-chip {
+  font-size: 12px !important;
+  font-weight: 400;
+}
+
+.chip-outer {
+  margin-left: 14px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-icon-button {
+  padding: 0;
+  min-width: 0;
+
+  width: unset !important;
+  flex-shrink: 0;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.top-buttons {
+  position: absolute !important;
+  right: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dark-text {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.avatar {
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+
+  img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.name-outer {
+  margin-left: 14px;
+  width: 36%;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .name {
+    font-size: 14px;
+  }
+}
+
+.location-outer {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.location-inner {
+  // margin-left: 14px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .name {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 14px;
+  }
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: unset;
+}
+
+.mat-card-header {
+  margin-bottom: 16px;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #dfe4ff !important;
+  color: #3f51b5 !important;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+  background-color: #ffecd4 !important;
+  color: #ffab40 !important;
+}
+
+.mat-chip.mat-standard-chip {
+  background-color: #f0f0f0;
+  color: rgba(129, 129, 129, 0.87);
+}
+
+.grey-icon {
+  color: lightgrey;
+}

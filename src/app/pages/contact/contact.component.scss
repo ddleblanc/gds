@@ -1,0 +1,22 @@
+h3 {
+  text-align: center;
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .contact-btn {
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 18px rgba(74, 124, 246, .12);
+
+    &__icon {
+      margin-bottom: 16px;
+    }
+  }
+}
