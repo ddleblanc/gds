@@ -1,28 +1,14 @@
-.test {
-  background: white;
-  height: 100px;
-  width: 100%;
-}
-
-.card-header-image {
-
-  background-size: cover;
-}
-
 mat-toolbar {
   position: fixed;
   bottom: 0;
   box-shadow: 0 0 18px rgba(74, 124, 246, .12);
 }
 
-.bottom-btn {
-  width: 49%;
+
+.margin-left-16 {
+  margin: 0 16px !important;
 }
 
-.bottom-btn:nth-child(1) {
-  margin-right: 2%;
-}
-
-.mat-expansion-panel:not([class*=mat-elevation-z]) {
-  box-shadow: 0 0 18px rgba(74, 124, 246, .12);
+.mat-card-avatar {
+  margin-right: 16px !important;
 }

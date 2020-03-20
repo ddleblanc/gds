@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
-import { trigger, transition, style, animate } from "@angular/animations";
 import { JobService } from "src/app/services/job.service";
+import { trigger, transition, style, animate } from "@angular/animations";
 
 @Component({
-  selector: "app-job-detail",
-  templateUrl: "./job-detail.component.html",
-  styleUrls: ["./job-detail.component.scss"],
+  selector: "app-company-detail",
+  templateUrl: "./company-detail.component.html",
+  styleUrls: ["./company-detail.component.scss"],
   animations: [
     trigger("enterAnimation", [
       transition(":enter", [
@@ -45,10 +45,11 @@ import { JobService } from "src/app/services/job.service";
     ])
   ]
 })
-export class JobDetailComponent implements OnInit {
+export class CompanyDetailComponent implements OnInit {
   panelOpenState = false;
-  vacature = {
-    title: "Full Stack mobile App Developer",
+  company = {
+    logo:
+      "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg",
     contact: {
       title: "Adres- en contactgegevens",
       name: "Onlinepets B.V.",
@@ -68,19 +69,19 @@ export class JobDetailComponent implements OnInit {
         ]
       },
       {
-        subject: "Functiebeschrijving:",
+        subject: "Missie:",
         paragraphs: [
           "Als Front-end Developer bij Medpets werk je aan onze eigen complexe en professionele webshop applicaties op basis van PHP. Naast projecten in het huidige platform ga je samen met het team verder aan de slag met de bouw van ons nieuwe e-commerce platform op basis van Laravel of het door ons zelf ontwikkelde front-end framework. Hierbij kunnen wij jouw hulp zeker goed gebruiken! Samen met onze vijf andere Developers bouw je mee aan de toekomst van Medpets."
         ]
       },
       {
-        subject: "Een voorbeeld van hoe je dag eruit zou kunnen zien:",
+        subject: "Visie:",
         paragraphs: [
           "Als Developer bij Medpets begin je de dag tussen 8.00 en 09.30 uur met een goede kop versgemalen koffie. Je start je computer op en bekijkt waar je gisteren was gebleven. Voor de dagelijkse stand-up schrijf je nog snel een aantal nieuwe regels code in de code editor. Om 09.30 uur kom je met heel het team samen en bespreek je waar je mee bezig bent geweest en wat de voortgang is. Hierna ga je weer aan de slag met de nieuwe feature waar je aan begonnen was. Nadat je de code hebt getest op de acceptatie server, maak je een pull-request aan waarna alle IT collega’s je code kunnen reviewen. Is je nieuwe feature goedgekeurd, dan kan deze ingezet worden op de live server. Daarna bespreek je met de designer van een andere nieuwe feature de werkzaamheden en eventuele animatie flow van verschillende stappen. Klinkt als een drukke dag. Wil je tussendoor even je hoofd leeg maken? Dat kan, er zijn altijd wel collega’s in voor een potje tafelvoetbal."
         ]
       },
       {
-        subject: "Profiel",
+        subject: "Partners",
         paragraphs: [
           "Je hebt een heldere visie over hoe je bepaalde programmeer concepten moet toepassen en je kan dit ook overbrengen aan je collega’s. Ook ben je zeer gedetailleerd, met oog voor pixel perfect design. Je hebt een zorgvuldige en nette programmeerstijl en werkt zelfstandig en accuraat. Als teamplayer denk je mee over het herschrijven van bestaande integraties, functionaliteiten en bedrijfsprocessen naar een nieuwe structuur in Laravel. Je voelt je verantwoordelijk voor het succes van Medpets en werkt graag in een informele, maar doelgerichte omgeving."
         ]
@@ -90,9 +91,10 @@ export class JobDetailComponent implements OnInit {
   image =
     "https://ctfassets.imgix.net/6vy33zo2mgy3/5DGwNvbPWS8xN3T1gDxc9R/a611e35652706d09943fa6bc7342fc46/Office_Suite_-_NEW_.jpg?auto=format%20compress&fit=crop&q=50&w=1000&h=563";
   phoneNumber;
+
   constructor(private jobService: JobService) {}
 
   ngOnInit() {
-    this.jobService.setCurrentPhoneNumber(this.vacature.contact.phone);
+    this.jobService.setCurrentPhoneNumber(this.company.contact.phone);
   }
 }

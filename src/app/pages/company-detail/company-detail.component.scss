@@ -1,0 +1,26 @@
+mat-toolbar {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 0 18px rgba(74, 124, 246, .12);
+}
+
+// .mat-card {
+//   padding: 0px;
+// }
+
+// mat-card-header {
+//   padding: 16px;
+// }
+
+// .mat-tab-group-dynamic-height .mat-tab-body-content {
+//   padding: 16px !important;
+// }
+
+.padding-16 {
+  padding: 0px 16px !important;
+}
+
+.mat-card-avatar {
+  margin-right: 16px !important;
+}

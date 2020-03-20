@@ -8,8 +8,8 @@
     <mat-card-header>
       <div mat-card-avatar class="card-header-image" [ngStyle]="{ 'background-image': 'url(' + image + ')'}">
       </div>
-      <mat-card-title>Vivian de Vos</mat-card-title>
-      <mat-card-subtitle>recruitment@medpets.nl {{phoneNumber}}</mat-card-subtitle>
+      <mat-card-title>{{vacature.title}}</mat-card-title>
+      <mat-card-subtitle>{{vacature.contact.name}}</mat-card-subtitle>
     </mat-card-header>
     <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content>
