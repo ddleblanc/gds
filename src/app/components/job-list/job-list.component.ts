@@ -28,6 +28,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://www.want.nl/wp-content/uploads/2019/05/google-logo.jpg",
       location: { city: "Breda", state: "NB" }
@@ -38,6 +39,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg",
       location: { city: "Rotterdam", state: "ZH" }
@@ -48,6 +50,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -58,6 +61,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://cdn2.vectorstock.com/i/1000x1000/24/01/letter-s-creative-premium-logo-design-vector-15362401.jpg",
       location: { city: "Breda", state: "NB" }
@@ -68,6 +72,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://designcontest3-com-designcontest.netdna-ssl.com/data/contests/135931/entries/big_d4a1264168c85e32.png",
       location: { city: "Rotterdam", state: "ZH" }
@@ -78,6 +83,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -88,6 +94,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://cdn2.vectorstock.com/i/1000x1000/24/01/letter-s-creative-premium-logo-design-vector-15362401.jpg",
       location: { city: "Breda", state: "NB" }
@@ -98,6 +105,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://designcontest3-com-designcontest.netdna-ssl.com/data/contests/135931/entries/big_d4a1264168c85e32.png",
       location: { city: "Rotterdam", state: "ZH" }
@@ -108,6 +116,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -118,6 +127,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://cdn2.vectorstock.com/i/1000x1000/24/01/letter-s-creative-premium-logo-design-vector-15362401.jpg",
       location: { city: "Breda", state: "NB" }
@@ -128,6 +138,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://designcontest3-com-designcontest.netdna-ssl.com/data/contests/135931/entries/big_d4a1264168c85e32.png",
       location: { city: "Rotterdam", state: "ZH" }
@@ -138,6 +149,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -148,6 +160,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://cdn2.vectorstock.com/i/1000x1000/24/01/letter-s-creative-premium-logo-design-vector-15362401.jpg",
       location: { city: "Breda", state: "NB" }
@@ -158,6 +171,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://designcontest3-com-designcontest.netdna-ssl.com/data/contests/135931/entries/big_d4a1264168c85e32.png",
       location: { city: "Rotterdam", state: "ZH" }
@@ -168,6 +182,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -178,6 +193,7 @@ export class JobListComponent implements OnInit {
       type: "Full Time",
       postedOn: Date.now(),
       companyName: "Ramotion",
+      companySlug: "ramotion",
       companyLogo:
         "https://cdn2.vectorstock.com/i/1000x1000/24/01/letter-s-creative-premium-logo-design-vector-15362401.jpg",
       location: { city: "Breda", state: "NB" }
@@ -188,6 +204,7 @@ export class JobListComponent implements OnInit {
       type: "Freelance",
       postedOn: Date.now(),
       companyName: "Focus Lab",
+      companySlug: "focuslab",
       companyLogo:
         "https://designcontest3-com-designcontest.netdna-ssl.com/data/contests/135931/entries/big_d4a1264168c85e32.png",
       location: { city: "Rotterdam", state: "ZH" }
@@ -198,6 +215,7 @@ export class JobListComponent implements OnInit {
       type: "Part Time",
       postedOn: Date.now(),
       companyName: "Jumbo",
+      companySlug: "jumbo",
       companyLogo:
         "https://actief65plus.bladecdn.net/wp-content/uploads/2019/04/jumbo-logo.jpg",
       location: { city: "Den Haag", state: "ZH" }
@@ -207,7 +225,10 @@ export class JobListComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-  navigateTo(_id) {
+  navigateToJob(_id) {
     this.router.navigate(["vacature", _id]);
+  }
+  navigateToCompany(slug) {
+    this.router.navigate([slug]);
   }
 }
